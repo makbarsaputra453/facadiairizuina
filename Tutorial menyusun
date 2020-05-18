@@ -1,0 +1,57 @@
+/* 16/05/2020 Muharaasa 09.08 dalam kegabutan  */
+
+*menyusun apk sederhana [bagian 2] dengan android 
+Bisa berbasis html css js*
+Note : just do it,  jika error pelajari kesalahan nya atau bisa #ask ing.
+
+Kali ini digunakan cara yang diperuntukkan bagi yang belum bisa meng compile files menjadi apk secara langsung,maka sebagai gantinya, kita akan menggunakan cara memutilasi apk lain. (merubah semua hal apk tersebut dari asset, file dex, raw dll.... ) 
+
+Kita akan menggunakan :
+Apk editor (pro) (yang heagoo)
+Apk mutilasi
+Teks editor
+
+
+Tahap tahap :
+A.) Penyusunan file dex (ga harus juga sebenarnya) 
+B.) Penyusunan file file assets
+C.) penyelesaian dibagian manifest (kalau melalui tahap A.) 
+Selesai
+
+A.) Penyusunan file classes.dex *(dapat dilewat kalau tak peduli apk packages name nya)
+
+*) keterangan : apk packages name misalnya com.akrstudio.irizuina
+
+#pengambilan classes.dex
+1.)masuk ke apk editor ,pilih apk mutilasi
+2.)Pilih full full (paling atas, decode all parties,)masuk ke folder assets 
+3.)klik bagian files (tengah bawah) 
+4.)klik smali dibagian kanan atas
+5.)ceklis folder smali klik ikon extract dibawah 
+6.)keluar dari apk editor, ubah file dex tersebut 
+#pengeditan classes.dex
+untuk ini,  pembahasan nya cukup panjang dan telah disediakan di muharaasa.blogspot.com
+Jadi dengan mengubah .Dex apk tersebut, kita dapat menamai android packages name .simak cara mengubahnya di muharaasa.blogspot.com
+
+
+
+B.) Penyusunan file file assets
+
+1. Buatlah sebuah folder dimana terdapat index.html ,kemudian anda dapat menghubungkannya  dengan file html maupun js lain.anggap saja folder itu website ,anda dapat menambahkan folder,  menghubungkan dengan multimedia seperti mp3,jpg dan lain lain. 
+
+
+
+2.)Masuk ke apk editor, Klik apk awal tadi
+(seperti yang sudah dibilang tadi,  apk awal ini sebenarnya hanya bertujuan untuk menggantikan proses compile file )
+
+3.)Pilih full edit (paling atas, decode all parties,)masuk ke folder assets 
+
+4.)Pada folder www replace dengan folder tempat kita dimana ada index.html sebagai dasar.
+
+
+C.) Penyelesaian bagian manifest
+Setelah masuk ke apk target, klik bagian manifest di pojok kanan bawah apk editor, 
+Pada bagian ini periksa masing masing bagian ,ubah yang berhububgan dengan apk packages maupun direktori tertentu.
+Bagian ini dapat dilewati jika hanya mengerjakan penggantian isi folder www dari Assets apk aja.
+
+D.) Setelah mengerjakan ABC,  klik build dibagian kanan atas, selesai..... 
